@@ -16,5 +16,14 @@ namespace ElephantReferences
             Console.WriteLine($"Na imię mi {Name}.");
             Console.WriteLine($"Długość moich uszu to {earSize}cm.");
         }
+        public void HearMessage(string message, Elephant whoSaidIt)
+        {
+            Console.WriteLine($"{Name} usłyszał(a) wiadomość.");
+            Console.WriteLine($"{whoSaidIt.Name} powiedział(a): {message}");
+        }
+        public void SpeakTo(Elephant WhoToTalkTo, string message)
+        {
+            WhoToTalkTo.HearMessage(message, this);
+        }
     }
 }

@@ -15,6 +15,7 @@ while (true)
     {
         Console.WriteLine("Wywołanie lucek.WhoAmI().");
         lucek.WhoAmI();
+        // lucek.HearMessage("Cześć", laura);
 
     }
     else if (userInput == '2')
