@@ -33,6 +33,14 @@ while (true)
         Console.WriteLine("Zmienne zostały przestawione");
 
 
+    }else if (userInput == '4')
+    {
+        lucek = laura;
+        lucek.earSize = 4321;
+        lucek.WhoAmI();
+    }else if ( userInput == '5')
+    {
+        laura.SpeakTo(lucek, "Cześć Lucku");
     }
     else return;
     Console.WriteLine();
